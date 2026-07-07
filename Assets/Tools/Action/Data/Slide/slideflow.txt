@@ -1,0 +1,24 @@
+玩家按闪避
+-> PlayerStateMachine.HandleSlide()
+-> SlideAction.StartJudge()
+-> SlideObjMono.StartCollideJudge()
+-> IsJudging = true
+
+敌方攻击范围检测扫到玩家 SlideObjMono
+-> SelfCollideManager.HandleCollide(sliceId, slideCollider)
+-> tag == Slide
+-> HandleSlideCollide()
+-> 判断 slice 是 CauseDamage
+-> 判断目标是玩家 CharacterProperty.isPlayer
+-> 判断 SlideObjMono.IsJudging
+-> SlideObjMono.HandleSuccessSlide()
+-> OnSuccessSlide 事件
+-> SlideAction.HandlePerfectDodge()
+-> TimeScaleManager.AddCommand(TimeScaleWitchCommand)
+-> RecordPerfectDodge(sliceId, playerId)
+
+如果同一轮攻击又扫到玩家本体
+-> HandleDamageCollide()
+-> HasPerfectDodged(sliceId, playerId) == true
+-> 跳过 BattleManager.Instance.AddDamage()
+-> 玩家不进入受伤结算

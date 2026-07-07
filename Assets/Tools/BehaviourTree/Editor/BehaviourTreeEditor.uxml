@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Tools/BehaviourTree/Editor/BehaviourTreeEditor.uss?fileID=7433441132597879392&amp;guid=39c2fa7b4eaab594d96ef7824b20eaab&amp;type=3#BehaviourTreeEditor" />
+    <uie:Toolbar>
+        <uie:ObjectField label="Object Field" name="OfBehaviourTree" />
+    </uie:Toolbar>
+    <Tools.Editor.SplitView focusable="true" style="background-color: rgb(56, 56, 56);">
+        <ui:VisualElement name="left-panel" focusable="true" style="flex-grow: 1; width: 200px; min-width: 200px;">
+            <Tools.Editor.SplitView orientation="Vertical" fixed-pane-initial-dimension="180">
+                <ui:VisualElement name="inspector-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); background-color: rgb(37, 37, 37);" />
+                    <Tools.BehaviourTree.Editor.View.InspectorView focusable="true" />
+                </ui:VisualElement>
+                <ui:VisualElement name="blackboard-container" style="flex-grow: 1; background-color: rgb(56, 56, 56);">
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-color: rgb(37, 37, 37); color: rgb(255, 255, 255);" />
+                    <Tools.Blackboard.Editor.View.BlackboardView />
+                </ui:VisualElement>
+            </Tools.Editor.SplitView>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" focusable="true" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Tree View" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-color: rgb(37, 37, 37); color: rgb(255, 255, 255);" />
+            <Tools.BehaviourTree.Editor.View.BehaviourTreeView focusable="true" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </Tools.Editor.SplitView>
+</ui:UXML>

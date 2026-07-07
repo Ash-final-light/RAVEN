@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="LinearLayout" style="flex-grow: 0; flex-direction: row; height: auto; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; min-height: 30px; max-height: 60px;">
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelParameterName" style="align-self: auto; justify-content: center; -unity-text-align: middle-left; flex-grow: 1; flex-shrink: 0; align-items: stretch; white-space: normal; flex-wrap: wrap; text-overflow: clip; max-width: none; width: 0; margin-left: 4px;" />
+        <ui:TextField picking-mode="Ignore" name="TfThumnail" style="width: 80px; height: 30px;" />
+        <ui:Label tabindex="-1" text="Duration" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        <ui:FloatField value="0" name="FfFloatValue" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px; height: 30px;" />
+        <ui:VisualElement name="VeMove" style="flex-grow: 0; flex-direction: column; height: auto; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; min-height: 30px; max-height: 60px;">
+            <ui:VisualElement name="LinearLayout" style="flex-grow: 0; flex-direction: row; height: auto; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; min-height: 30px; max-height: 60px;">
+                <ui:Label tabindex="-1" text="StartPos" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <ui:FloatField value="0" name="FfStarX" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px;" />
+                <ui:FloatField value="0" name="FfStarY" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="LinearLayout" style="flex-grow: 0; flex-direction: row; height: auto; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; min-height: 30px; max-height: 60px;">
+                <ui:Label tabindex="-1" text="EndPos  " parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <ui:FloatField value="0" name="FfEndX" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px;" />
+                <ui:FloatField value="0" name="FfEndY" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="VeScale" style="flex-grow: 0; flex-direction: column; height: auto; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; min-height: 30px; max-height: 60px;">
+            <ui:VisualElement name="LinearLayout" style="flex-grow: 0; flex-direction: row; height: 30px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; min-height: 30px; max-height: 60px;">
+                <ui:FloatField value="0" name="FfStartScale" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px;" />
+                <ui:FloatField value="0" name="FfEndScale" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

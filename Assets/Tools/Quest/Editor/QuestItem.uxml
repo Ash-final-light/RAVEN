@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements"
+         editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="True">
+
+    <ui:VisualElement class="quest-item" style="flex-direction: row; flex-shrink: 1;">
+        
+        <ui:Label name="IdLabel"
+                  class="quest-id"
+                  style="white-space: normal; flex-shrink: 0;" />
+
+        <ui:VisualElement class="quest-content"
+                          style="flex-grow: 1; flex-shrink: 1; flex-direction: column;">
+            
+            <ui:Label name="TitleLabel"
+                      class="quest-title"
+                      style="white-space: normal;" />
+
+            <ui:Label name="DescLabel"
+                      class="quest-desc"
+                      style="white-space: normal;" />
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+
+</ui:UXML>

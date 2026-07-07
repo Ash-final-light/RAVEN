@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Tools/Quest/Editor/QuestEditor.uss?fileID=7433441132597879392&amp;guid=2366586313e8684438e4492001de1279&amp;type=3#QuestEditor" />
+    <uie:Toolbar style="flex-direction: row-reverse;">
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnApply" text="Apply" />
+        <uie:ObjectField name="OfQuestPool" />
+    </uie:Toolbar>
+    <Tools.Editor.SplitView>
+        <ui:VisualElement name="left-panel" style="flex-grow: 1;">
+            <ui:VisualElement name="HeadLayout" style="flex-grow: 0; height: 20px; flex-direction: row; background-color: rgb(40, 40, 40);">
+                <ui:Label tabindex="-1" text="QuestList" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" name="Label" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; font-size: 12px; padding-top: 0; padding-right: 0; padding-bottom: 0; height: auto; -unity-text-align: middle-left; flex-grow: 1; flex-wrap: nowrap;" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnAddQuest" text="+" />
+            </ui:VisualElement>
+            <ui:ScrollView>
+                <ui:ListView name="SvQuestList" style="min-height: 80px;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 1;">
+            <uie:Toolbar style="flex-direction: row-reverse;">
+                <ui:Label tabindex="-1" text="Config" parse-escape-sequences="true" display-tooltip-when-elided="true" style="position: absolute; left: 0; height: 15px; -unity-text-align: middle-center; color: rgb(255, 255, 255);" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnRemoveQuest" text="-" />
+            </uie:Toolbar>
+            <ui:ScrollView>
+                <ui:IMGUIContainer name="ImcQuestConfig" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </Tools.Editor.SplitView>
+</ui:UXML>

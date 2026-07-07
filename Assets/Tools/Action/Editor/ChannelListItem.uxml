@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Tools/Action/Editor/ChannelListItem.uss?fileID=7433441132597879392&amp;guid=a63dd8f301b8477c8b63f2f287809376&amp;type=3#ChannelListItem" />
+    <ui:VisualElement name="ChannelItem" style="flex-grow: 0; flex-direction: row; background-color: rgb(0, 0, 0); flex-shrink: 0; height: 40px; min-height: 40px;">
+        <ui:Label tabindex="-1" text="Channel" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LbChannelName" style="flex-shrink: 1; flex-grow: 1; background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); -unity-text-align: middle-center;" />
+        <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtAddChildChannel" />
+    </ui:VisualElement>
+</ui:UXML>

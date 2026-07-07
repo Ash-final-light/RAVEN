@@ -1,0 +1,27 @@
+.quest-item {
+    flex-direction: row;
+    padding-left: 8px;
+    height: 60px;
+    align-items: center;
+}
+
+.quest-id {
+    font-size: 18px;
+    color: #888;
+    min-width: 60px;
+}
+
+.quest-content {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.quest-title {
+    font-size: 14px;
+    color: white;
+}
+
+.quest-desc {
+    font-size: 12px;
+    color: #aaa;
+}

@@ -1,0 +1,3 @@
+parent是指跟随的对象，可以为空
+owner不可以为空，这是检测的中心点
+考虑后期ActionClip中添加是否跟随父物体的选项，从而改变ActionClipPlayer的行为

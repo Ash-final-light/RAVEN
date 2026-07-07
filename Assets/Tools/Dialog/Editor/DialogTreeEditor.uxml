@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Tools/Dialog/Editor/DialogTreeEditor.uss?fileID=7433441132597879392&amp;guid=7dec506ba4120e34f805a0d750c93635&amp;type=3#DialogTreeEditor" />
+    <uie:Toolbar>
+        <uie:ObjectField name="OfDialogTree" />
+        <uie:ToolbarButton text="Apply" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbApply" />
+        <uie:ToolbarButton text="Revert" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbRevert" />
+    </uie:Toolbar>
+    <Tools.Editor.SplitView focusable="true" style="background-color: rgb(56, 56, 56);">
+        <ui:VisualElement name="left-panel" focusable="true" style="flex-grow: 1; width: 200px; min-width: 200px;">
+            <Tools.Editor.SplitView orientation="Vertical" fixed-pane-initial-dimension="180">
+                <ui:VisualElement name="inspector-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); background-color: rgb(37, 37, 37);" />
+                    <Tools.Dialog.Editor.View.DialogTreeInspectorView name="DialogTreeInspectorView" />
+                </ui:VisualElement>
+                <ui:VisualElement name="blackboard-container" style="flex-grow: 1; background-color: rgb(56, 56, 56);flex-direction: column;">
+                    <ui:Label tabindex="-1" text="ProfilePool" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-color: rgb(37, 37, 37); color: rgb(255, 255, 255);" />
+                    <!-- 关键：给 ProfilePoolView 添加占满容器的样式 -->
+                    <Tools.Dialog.Editor.View.ProfilePoolView name="ProfilePoolView" style="flex-grow: 1; width: 100%; height: 100%;" />
+                </ui:VisualElement>
+            </Tools.Editor.SplitView>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" focusable="true" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Tree View" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-color: rgb(37, 37, 37); color: rgb(255, 255, 255);" />
+            <Tools.Dialog.Editor.View.DialogTreeView name="DialogTreeView" style="flex-grow: 1; width: 100%; height: 100%; position: relative;" />
+        </ui:VisualElement>
+    </Tools.Editor.SplitView>
+</ui:UXML>

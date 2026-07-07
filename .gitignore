@@ -1,0 +1,63 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# Unity generated files
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Build outputs and packages
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+
+# Local IDE settings
+.vs/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep this repository source-only by default.
+*.png
+*.jpg
+*.jpeg
+*.psd
+*.tga
+*.fbx
+*.obj
+*.blend
+*.wav
+*.mp3
+*.ogg
+*.mp4
+*.mat
+*.asset
+*.unity
+*.playable
+*.dll
+*.bytes

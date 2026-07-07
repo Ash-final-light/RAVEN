@@ -1,0 +1,8 @@
+BaseSkillDispatcher.cs，
+用于和ui之间的通信，告诉ui，现在应该消除哪些信号球，加入多少信号球，角色切换时替换一系列ui图标，大招能量满时开启ui图标
+SkillBallManager.cs，
+用来管理当前角色技能球分发和PlayerCharacterParameters信息的填写
+对于PlayerCharacterParameters，需要记录当前消除信号球的信息
+
+信号球本身也是一个输入信息，在PlayerStateMachine中也需要参与进来，思考加入到哪一部分
+ActionClip部分，造成伤害，需要根据信号球消除数量，执行不同的伤害数据（即多个DamgeHitConfigSo）

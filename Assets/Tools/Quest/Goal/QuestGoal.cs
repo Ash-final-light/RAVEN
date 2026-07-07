@@ -1,0 +1,12 @@
+namespace Tools.Quest.Goal
+{
+    public class QuestGoal
+    {
+        public QuestGoalInfo info; // 任务目标配置信息
+        public string description; // 任务目标描述，动态实际数据
+        public bool triggered; // 任务目标是否触发
+        public bool completed; // 任务目标是否完成
+        public bool completionHandled; // 完成回调是否已经执行
+        public string state; // 任务目标状态，本质上是序列化后的数据字符串，用于数据持久化
+    }
+}

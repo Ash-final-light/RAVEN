@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Tools/BehaviourTree/Editor/NodeViewStyle.uss?fileID=7433441132597879392&amp;guid=2b300655abe91a64d9271886625baca8&amp;type=3#NodeViewStyle" />
+    <ui:VisualElement name="node-state" style="flex-grow: 1;" />
+    <ui:VisualElement name="node-border">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="top">
+                <ui:VisualElement name="input" />
+                <ui:VisualElement name="divider" class="horizontal" />
+                <ui:VisualElement name="title">
+                    <ui:Label name="title-label" text="SequenceNode" class="unity-text-element unity-label" style="font-size: 20px;" />
+                    <ui:VisualElement name="title-button-container">
+                        <ui:VisualElement name="collapse-button">
+                            <ui:VisualElement name="icon" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="NoticeInfo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NoticeInfo" style="white-space: normal; max-width: 250px;" />
+                <ui:Label tabindex="-1" text="description" parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" style="white-space: normal; max-width: 150px;" />
+                <ui:VisualElement name="divider" class="vertical" />
+                <ui:VisualElement name="output" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>

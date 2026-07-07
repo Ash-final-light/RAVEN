@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <uie:ObjectField label="Script" name="ObjectField" style="height: 21px; align-self: auto; align-items: auto; flex-grow: 0; flex-shrink: 0;" />
+    <uie:Toolbar>
+        <ui:Label tabindex="-1" text="Parameter" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 80px; -unity-text-align: middle-center; -unity-text-outline-color: rgb(255, 255, 255); color: rgb(255, 255, 255);" />
+        <ui:TextField picking-mode="Ignore" value="filler text" name="TfParameterName" style="width: 160px;" />
+        <uie:ToolbarButton text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbAddParameter" />
+        <uie:ToolbarButton text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbRemoveParameter" />
+    </uie:Toolbar>
+    <ui:ListView name="LvParameterList" style="background-color: rgb(47, 47, 47);" />
+</ui:UXML>
